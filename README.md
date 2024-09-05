@@ -1,4 +1,4 @@
-# パッ！と回覧板
+# pattokairanban
 
 ## サイト概要
 
