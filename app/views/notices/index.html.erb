@@ -1,0 +1,10 @@
+<% @notices.each do |notice| %>
+  <div>
+    <%= link_to notice_path(notice.id) do %>
+      <p>タイトル：<%= notice.title %></p>
+    <% end %>
+      <p>本文：<%= notice.body %></p>
+      <%= image_tag notice.get_image %>
+    <p><%= image_tag notice.user.get_profile_image(100,100) %><%= notice.user.name %></p>
+  </div>
+<% end %>
